@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 254);
+}
+
+.containerPrincipal {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(245, 242, 242);
+    box-shadow:  0 1px 30px 8px rgb(124, 122, 122);
+    border-radius: 0.2em;
+    overflow: scroll;
+}
+
+.containerPrincipal::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+.containerPrincipal::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 172, 177);
+    border-radius: 2em;
+    height: 3em;
+}
+
+.containerPrincipal > h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 0.9em 0 0 0;
+    font-size: 0.8em;
+}
+
+.escreveLista {
+    margin-top: 2em;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(4, 2em);
+    justify-content: center;
+    align-items: center;
+}
+
+.escreveLista > label {
+    font-family: 'Arial', sans-serif;
+    color: rgb(155, 152, 152);
+    font-size: 0.8em;
+}
+
+.escreveLista > input[type="text"] {
+    outline: 0;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    text-indent: 0.5em;
+}
+
+.escreveLista > .button_marcar {
+    color: white;
+    background-color: black;
+    outline: black;
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    height: 2.2em;
+    margin-top: 0.3em;
+}
+
+.element {
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    height: max-content;
+    background-color: white;
+    box-shadow:  0 1px 20px 3px rgb(124, 122, 122);
+    border-radius: 0.2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    position: relative;
+}
+
+.divitems > .titleOfElement {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    position: absolute;
+    left: 1em;
+    font-weight: 600;
+}
+
+.element > .textOfElement {
+    display: none;
+    font-family: 'Lato', sans-serif;
+    color: rgb(104, 103, 103);
+    white-space:break-spaces;
+}
+
+.divitems {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: 2.3em;
+}
+
+.fechardiv {
+    border: 1px solid white;
+}
+ 
+.divitems > .arrowdown {
+    width: 1.3em;
+    position: absolute;
+    right: 2em
+}
+
+#author {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    bottom: 1em;
+    font-size: 0.6em;
+}
+
+@media screen and (max-width: 400px) {
+    .divitems > .arrowdown {
+        width: 1.3em;
+        position: absolute;
+        right: 0.7em
+    }
+}
