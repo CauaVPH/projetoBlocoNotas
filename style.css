@@ -123,14 +123,6 @@ body {
     right: 2em
 }
 
-#author {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    position: absolute;
-    bottom: 1em;
-    font-size: 0.6em;
-}
-
 @media screen and (max-width: 400px) {
     .divitems > .arrowdown {
         width: 1.3em;
