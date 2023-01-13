@@ -35,7 +35,6 @@ body {
     box-shadow:  0 1px 30px 8px rgb(124, 122, 122);
     border-radius: 0.2em;
     overflow: scroll;
-    margin-top: 2em;
 }
 
 .containerPrincipal::-webkit-scrollbar {
